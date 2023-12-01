@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>online placement examination</title>
+<link rel="stylesheet" href="my style.css">
+</head>
+<body>
+<header  id="top" >
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#register">Register</a></li>
+<li><a href="#login">Login</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="home">
+<div class="Container">
+<img src="exam.jpg" alt="display picture of book">
+<h2>online placement examnination</h2>
+<center><h3><a href="#top">Goto Top</a></h3></center>
+</div> 
+</section>
+
+<section id="register">
+<div class="container">
+ <form  action ="register.php" method ="post" onsubmit="return validate_form();">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName" name="userName" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="number">number:</label>
+        <input type="tel" id="phone" name="number"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <option value="Chennai">Chennai</option>
+            <!-- Add more options as needed -->
+            <option value="Mumbai">Chennai</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+</center>
+    </form>
+<script type="text/javascript">
+function validate_form()
+{
+valid = true;
+  var a=document.getElementById('password').value;
+  var b=document.getElementById('retypePassword').value;
+ if (a != b)
+ {
+        alert("Passwords do not match.");
+        valid = false;
+    }
+return valid;
+}
+</script>
+<center><h3><a href="#top">Go to Top</a></h3></center>
+</div><br><br>
+</section>
+
+<section id="login">
+<div class="container">
+<form action="login.php" method="post">
+<label>User Name : </label>
+<input type="text" name="userName"><br><br>
+<label>Password : </label>
+<input type="text" name="password"><br><br>
+<input type="submit" value="Submit">
+</form>
+<center><h3><a href="#top">GO TO TOP</a></h3></center>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h1>Contact me</h1>
+<ul>
+<li>exam@gmail.com</li>
+<li>9347790010</li>
+<li>arjun</li>
+</ul>
+<center><h3><a href="#top">GO TO TOP</a></h3></center>
+</div>
+</section>
+
+</main>
+<footer>
+<p>© Copyright 2023 saveetha school of engineering.</p>
+</footer>
+</body>
+</html>
+
