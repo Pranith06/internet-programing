@@ -2,7 +2,7 @@
 $servername = "localhost";
 $userName = "root";
 $password = "";
-$dbname = "exam";
+$dbname = "LIBRARY";
 
 $conn = new mysqli($servername, $userName, $password, $dbname);
 
@@ -15,7 +15,7 @@ echo 'Connected successfully<br/>';
 $u = $_POST["userName"];
 $p = $_POST["password"];
 
-$sql = "SELECT userName,password FROM candidate WHERE userName = '$u'";
+$sql = "SELECT userName,password FROM Customer WHERE userName = '$u'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -32,4 +32,4 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 
-header("refresh:15; url=homepage.html;");
+header("refresh:15; url=home.html;");
