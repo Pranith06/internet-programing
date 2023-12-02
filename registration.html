@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>user registration</title>
+<style>
+       
+        input[type="submit"] {
+            background-color: blue;
+            color: white; 
+            padding: 10px 15px; 
+            cursor: pointer;
+
+    </style>
+</head>
+<body>
+<h1><center>Registration form</center></h1>
+<center>
+    <form action="#" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName" name="userName" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="retypePassword">Retype Password:</label>
+        <input type="password" id="retypePassword" name="retypePassword" required><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone No:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <option value="Chennai">Chennai</option>
+            <!-- Add more options as needed -->
+        </select><br>
+
+        <input type="submit" value="Submit">
+</center>
+    </form>
+
+</body>
+</html>
